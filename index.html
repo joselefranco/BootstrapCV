@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <h1>Here is our CV</h1>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <h2>Josele & Thomas</h2>
+        </div>
+      </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
+Examples
+
+Build on the basic template above with Bootstrap's many components. We encourage you to customize and adapt Bootstrap to suit your individual project's needs.
+
+Get the source code for every example below by downloading the Bootstrap repository. Examples can be found in the docs/examples/ directory.
+
+Using the framework
+Starter template example
+Starter template
+Nothing but the basics: compiled CSS and JavaScript along with a container.
+
+Bootstrap theme example
+Bootstrap theme
+Load the optional Bootstrap theme for a visually enhanced experience.
+
+Multiple grids example
+Grids
+Multiple examples of grid layouts with all four tiers, nesting, and more.
+
+Jumbotron example
+Jumbotron
+Build around the jumbotron with a navbar and some basic grid columns.
+
+Narrow jumbotron example
+Narrow jumbotron
+Build a more custom page by narrowing the default container and jumbotron.
+
+Navbars in action
+Navbar example
+Navbar
+Super basic template that includes the navbar along with some additional content.
+
+Static top navbar example
+Static top navbar
+Super basic template with a static top navbar along with some additional content.
+
+Fixed navbar example
+Fixed navbar
+Super basic template with a fixed top navbar along with some additional content.
+
+Custom components
+A one-page template example
+Cover
+A one-page template for building simple and beautiful home pages.
+
+Carousel example
+Carousel
+Customize the navbar and carousel, then add some new components.
+
+Blog layout example
+Blog
+Simple two-column blog layout with custom navigation, header, and type.
+
+Dashboard example
+Dashboard
+Basic structure for an admin dashboard with fixed sidebar and navbar.
+
+Sign-in page example
+Sign-in page
+Custom form layout and design for a simple sign in form.
+
+Justified nav example
+Justified nav
+Create a custom navbar with justified links. Heads up! Not too Safari friendly.
+
+Sticky footer example
+Sticky footer
+Attach a footer to the bottom of the viewport when the content is shorter than it.
+
+Sticky footer with navbar example
+Sticky footer with navbar
+Attach a footer to the bottom of the viewport with a fixed navbar at the top.
+
+Experiments
+Non-responsive example
+Non-responsive Bootstrap
+Easily disable the responsiveness of Bootstrap per our docs.
+
+Off-canvas navigation example
+Off-canvas
+Build a toggleable off-canvas navigation menu for use with Bootstrap.
+
+Tools
+
+Bootlint
+Bootlint is the official Bootstrap HTML linter tool. It automatically checks for several common HTML mistakes in webpages that are using Bootstrap in a fairly "vanilla" way. Vanilla Bootstrap's components/widgets require their parts of the DOM to conform to certain structures. Bootlint checks that instances of Bootstrap components have correctly-structured HTML. Consider adding Bootlint to your Bootstrap web development toolchain so that none of the common mistakes slow down your project's development.
+
+Community
+
+Stay up to date on the development of Bootstrap and reach out to the community with these helpful resources.
+
+Read and subscribe to The Official Bootstrap Blog.
+Chat with fellow Bootstrappers using IRC in the irc.freenode.net server, in the ##bootstrap channel.
+For help using Bootstrap, ask on StackOverflow using the tag twitter-bootstrap-3.
+Developers should use the keyword bootstrap on packages which modify or add to the functionality of Bootstrap when distributing through npm or similar delivery mechanisms for maximum discoverability.
+Find inspiring examples of people building with Bootstrap at the Bootstrap Expo.
+You can also follow @getbootstrap on Twitter for the latest gossip and awesome music videos.
+
+Disabling responsiveness
+
+Bootstrap automatically adapts your pages for various screen sizes. Here's how to disable this feature so your page works like this non-responsive example.
+
+Steps to disable page responsiveness
+Omit the viewport <meta> mentioned in the CSS docs
+Override the width on the .container for each grid tier with a single width, for example width: 970px !important; Be sure that this comes after the default Bootstrap CSS. You can optionally avoid the !important with media queries or some selector-fu.
+If using navbars, remove all navbar collapsing and expanding behavior.
+For grid layouts, use .col-xs-* classes in addition to, or in place of, the medium/large ones. Don't worry, the extra-small device grid scales to all resolutions.
+You'll still need Respond.js for IE8 (since our media queries are still there and need to be processed). This disables the "mobile site" aspects of Bootstrap.
+
+Bootstrap template with responsiveness disabled
+We've applied these steps to an example. Read its source code to see the specific changes implemented.
+
+View non-responsive example
+
+Migrating from v2.x to v3.x
+Looking to migrate from an older version of Bootstrap to v3.x? Check out our migration guide.
+Browser and device support
+
+Bootstrap is built to work best in the latest desktop and mobile browsers, meaning older browsers might display differently styled, though fully functional, renderings of certain components.
+
+Supported browsers
+Specifically, we support the latest versions of the following browsers and platforms.
+
+Alternative browsers which use the latest version of WebKit, Blink, or Gecko, whether directly or via the platform's web view API, are not explicitly supported. However, Bootstrap should (in most cases) display and function correctly in these browsers as well. More specific support information is provided below.
+
+Mobile devices
+Generally speaking, Bootstrap supports the latest versions of each major platform's default browsers. Note that proxy browsers (such as Opera Mini, Opera Mobile's Turbo mode, UC Browser Mini, Amazon Silk) are not supported.
+
+Chrome	Firefox	Safari
+Android	 Supported	 Supported	N/A
+iOS	 Supported	 Supported	 Supported
+Desktop browsers
+Similarly, the latest versions of most desktop browsers are supported.
+
+Chrome	Firefox	Internet Explorer	Opera	Safari
+Mac	 Supported	 Supported	N/A	 Supported	 Supported
+Windows	 Supported	 Supported	 Supported	 Supported	 Not supported
+On Windows, we support Internet Explorer 8-11.
+
+For Firefox, in addition to the latest normal stable release, we also support the latest Extended Support Release (ESR) version of Firefox.
+
+Unofficially, Bootstrap should look and behave well enough in Chromium and Chrome for Linux, Firefox for Linux, and Internet Explorer 7, as well as Microsoft Edge, though they are not officially supported.
+
+For a list of some of the browser bugs that Bootstrap has to grapple with, see our Wall of browser bugs.
+
+Internet Explorer 8 and 9
+Internet Explorer 8 and 9 are also supported, however, please be aware that some CSS3 properties and HTML5 elements are not fully supported by these browsers. In addition, Internet Explorer 8 requires the use of Respond.js to enable media query support.
+
+Feature	Internet Explorer 8	Internet Explorer 9
+border-radius	 Not supported	 Supported
+box-shadow	 Not supported	 Supported
+transform	 Not supported	 Supported, with -ms prefix
+transition	 Not supported
+placeholder	 Not supported
+Visit Can I use... for details on browser support of CSS3 and HTML5 features.
+
+Internet Explorer 8 and Respond.js
+Beware of the following caveats when using Respond.js in your development and production environments for Internet Explorer 8.
+
+Respond.js and cross-domain CSS
+Using Respond.js with CSS hosted on a different (sub)domain (for example, on a CDN) requires some additional setup. See the Respond.js docs for details.
+
+Respond.js and file://
+Due to browser security rules, Respond.js doesn't work with pages viewed via the file:// protocol (like when opening a local HTML file). To test responsive features in IE8, view your pages over HTTP(S). See the Respond.js docs for details.
+
+Respond.js and @import
+Respond.js doesn't work with CSS that's referenced via @import. In particular, some Drupal configurations are known to use @import. See the Respond.js docs for details.
+
+Internet Explorer 8 and box-sizing
+IE8 does not fully support box-sizing: border-box; when combined with min-width, max-width, min-height, or max-height. For that reason, as of v3.0.1, we no longer use max-width on .containers.
+
+Internet Explorer 8 and @font-face
+IE8 has some issues with @font-face when combined with :before. Bootstrap uses that combination with its Glyphicons. If a page is cached, and loaded without the mouse over the window (i.e. hit the refresh button or load something in an iframe) then the page gets rendered before the font loads. Hovering over the page (body) will show some of the icons and hovering over the remaining icons will show those as well. See issue #13863 for details.
+
+IE Compatibility modes
+Bootstrap is not supported in the old Internet Explorer compatibility modes. To be sure you're using the latest rendering mode for IE, consider including the appropriate <meta> tag in your pages:
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+Confirm the document mode by opening the debugging tools: press F12 and check the "Document Mode".
+
+This tag is included in all of Bootstrap's documentation and examples to ensure the best rendering possible in each supported version of Internet Explorer.
+
+See this StackOverflow question for more information.
+
+Internet Explorer 10 in Windows 8 and Windows Phone 8
+Internet Explorer 10 doesn't differentiate device width from viewport width, and thus doesn't properly apply the media queries in Bootstrap's CSS. Normally you'd just add a quick snippet of CSS to fix this:
+
+@-ms-viewport       { width: device-width; }
+However, this doesn't work for devices running Windows Phone 8 versions older than Update 3 (a.k.a. GDR3), as it causes such devices to show a mostly desktop view instead of narrow "phone" view. To address this, you'll need to include the following CSS and JavaScript to work around the bug.
+
+@-ms-viewport       { width: device-width; }
+@-o-viewport        { width: device-width; }
+@viewport           { width: device-width; }
+// Copyright 2014-2015 Twitter, Inc.
+// Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+  var msViewportStyle = document.createElement('style')
+  msViewportStyle.appendChild(
+    document.createTextNode(
+      '@-ms-viewport{width:auto!important}'
+    )
+  )
+  document.querySelector('head').appendChild(msViewportStyle)
+}
+For more information and usage guidelines, read Windows Phone 8 and Device-Width.
+
+As a heads up, we include this in all of Bootstrap's documentation and examples as a demonstration.
+
+Safari percent rounding
+The rendering engine of versions of Safari prior to v7.1 for OS X and Safari for iOS v8.0 had some trouble with the number of decimal places used in our .col-*-1 grid classes. So if you had 12 individual grid columns, you'd notice that they came up short compared to other rows of columns. Besides upgrading Safari/iOS, you have some options for workarounds:
+
+Add .pull-right to your last grid column to get the hard-right alignment
+Tweak your percentages manually to get the perfect rounding for Safari (more difficult than the first option)
+Modals, navbars, and virtual keyboards
+Overflow and scrolling
+Support for overflow: hidden on the <body> element is quite limited in iOS and Android. To that end, when you scroll past the top or bottom of a modal in either of those devices' browsers, the <body> content will begin to scroll. See Chrome bug #175502 (fixed in Chrome v40) and WebKit bug #153852.
+
+iOS text fields and scrolling
+As of iOS 9.3, while a modal is open, if the initial touch of a scroll gesture is within the boundary of a textual <input> or a <textarea>, the <body> content underneath the modal will be scrolled instead of the modal itself. See WebKit bug #153856.
+
+Virtual keyboards
+Also, note that if you're using a fixed navbar or using inputs within a modal, iOS has a rendering bug that doesn't update the position of fixed elements when the virtual keyboard is triggered. A few workarounds for this include transforming your elements to position: absolute or invoking a timer on focus to try to correct the positioning manually. This is not handled by Bootstrap, so it is up to you to decide which solution is best for your application.
+
+Navbar Dropdowns
+The .dropdown-backdrop element isn't used on iOS in the nav because of the complexity of z-indexing. Thus, to close dropdowns in navbars, you must directly click the dropdown element (or any other element which will fire a click event in iOS).
+
+Browser zooming
+Page zooming inevitably presents rendering artifacts in some components, both in Bootstrap and the rest of the web. Depending on the issue, we may be able to fix it (search first and then open an issue if need be). However, we tend to ignore these as they often have no direct solution other than hacky workarounds.
+
+Sticky :hover/:focus on mobile
+Even though real hovering isn't possible on most touchscreens, most mobile browsers emulate hovering support and make :hover "sticky". In other words, :hover styles start applying after tapping an element and only stop applying after the user taps some other element. This can cause Bootstrap's :hover states to become undesirably "stuck" on such browsers. Some mobile browsers also make :focus similarly sticky. There is currently no simple workaround for these issues other than removing such styles entirely.
+
+Printing
+Even in some modern browsers, printing can be quirky.
+
+In particular, as of Chrome v32 and regardless of margin settings, Chrome uses a viewport width significantly narrower than the physical paper size when resolving media queries while printing a webpage. This can result in Bootstrap's extra-small grid being unexpectedly activated when printing. See issue #12078 and Chrome bug #273306 for some details. Suggested workarounds:
+
+Embrace the extra-small grid and make sure your page looks acceptable under it.
+Customize the values of the @screen-* Less variables so that your printer paper is considered larger than extra-small.
+Add custom media queries to change the grid size breakpoints for print media only.
+Also, as of Safari v8.0, fixed-width .containers can cause Safari to use an unusually small font size when printing. See #14868 and WebKit bug #138192 for more details. One potential workaround for this is adding the following CSS:
+
+@media print {
+  .container {
+    width: auto;
+  }
+}
+Android stock browser
+Out of the box, Android 4.1 (and even some newer releases apparently) ship with the Browser app as the default web browser of choice (as opposed to Chrome). Unfortunately, the Browser app has lots of bugs and inconsistencies with CSS in general.
+
+Select menus
+On <select> elements, the Android stock browser will not display the side controls if there is a border-radius and/or border applied. (See this StackOverflow question for details.) Use the snippet of code below to remove the offending CSS and render the <select> as an unstyled element on the Android stock browser. The user agent sniffing avoids interference with Chrome, Safari, and Mozilla browsers.
+
+<script>
+$(function () {
+  var nua = navigator.userAgent
+  var isAndroid = (nua.indexOf('Mozilla/5.0') > -1 && nua.indexOf('Android ') > -1 && nua.indexOf('AppleWebKit') > -1 && nua.indexOf('Chrome') === -1)
+  if (isAndroid) {
+    $('select.form-control').removeClass('form-control').css('width', '100%')
+  }
+})
+</script>
+Want to see an example? Check out this JS Bin demo.
+
+Validators
+In order to provide the best possible experience to old and buggy browsers, Bootstrap uses CSS browser hacks in several places to target special CSS to certain browser versions in order to work around bugs in the browsers themselves. These hacks understandably cause CSS validators to complain that they are invalid. In a couple places, we also use bleeding-edge CSS features that aren't yet fully standardized, but these are used purely for progressive enhancement.
+
+These validation warnings don't matter in practice since the non-hacky portion of our CSS does fully validate and the hacky portions don't interfere with the proper functioning of the non-hacky portion, hence why we deliberately ignore these particular warnings.
+
+Our HTML docs likewise have some trivial and inconsequential HTML validation warnings due to our inclusion of a workaround for a certain Firefox bug.
+
+Third party support
+
+While we don't officially support any third party plugins or add-ons, we do offer some useful advice to help avoid potential issues in your projects.
+
+Box-sizing
+Some third party software, including Google Maps and Google Custom Search Engine, conflict with Bootstrap due to * { box-sizing: border-box; }, a rule which makes it so padding does not affect the final computed width of an element. Learn more about box model and sizing at CSS Tricks.
+
+Depending on the context, you may override as-needed (Option 1) or reset the box-sizing for entire regions (Option 2).
+
+/* Box-sizing resets
+ *
+ * Reset individual elements or override regions to avoid conflicts due to
+ * global box model settings of Bootstrap. Two options, individual overrides and
+ * region resets, are available as plain CSS and uncompiled Less formats.
+ */
+
+/* Option 1A: Override a single element's box model via CSS */
+.element {
+  -webkit-box-sizing: content-box;
+     -moz-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
+/* Option 1B: Override a single element's box model by using a Bootstrap Less mixin */
+.element {
+  .box-sizing(content-box);
+}
+
+/* Option 2A: Reset an entire region via CSS */
+.reset-box-sizing,
+.reset-box-sizing *,
+.reset-box-sizing *:before,
+.reset-box-sizing *:after {
+  -webkit-box-sizing: content-box;
+     -moz-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
+/* Option 2B: Reset an entire region with a custom Less mixin */
+.reset-box-sizing {
+  &,
+  *,
+  *:before,
+  *:after {
+    .box-sizing(content-box);
+  }
+}
+.element {
+  .reset-box-sizing();
+}
+Accessibility
+
+Bootstrap follows common web standards and—with minimal extra effort—can be used to create sites that are accessible to those using AT.
+
+Skip navigation
+If your navigation contains many links and comes before the main content in the DOM, add a Skip to main content link before the navigation (for a simple explanation, see this A11Y Project article on skip navigation links). Using the .sr-only class will visually hide the skip link, and the .sr-only-focusable class will ensure that the link becomes visible once focused (for sighted keyboard users).
+
+Due to long-standing shortcomings/bugs in Chrome (see issue 262171 in the Chromium bug tracker) and Internet Explorer (see this article on in-page links and focus order), you will need to make sure that the target of your skip link is at least programmatically focusable by adding tabindex="-1".
+
+In addition, you may want to explicitly suppress a visible focus indication on the target (particularly as Chrome currently also sets focus on elements with tabindex="-1" when they are clicked with the mouse) with #content:focus { outline: none; }.
+
+Note that this bug will also affect any other in-page links your site may be using, rendering them useless for keyboard users. You may consider adding a similar stop-gap fix to all other named anchors / fragment identifiers that act as link targets.
+<body>
+  <a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
+  ...
+  <div class="container" id="content" tabindex="-1">
+    <!-- The main page content -->
+  </div>
+</body>
+Nested headings
+When nesting headings (<h1> - <h6>), your primary document header should be an <h1>. Subsequent headings should make logical use of <h2> - <h6> such that screen readers can construct a table of contents for your pages.
+
+Learn more at HTML CodeSniffer and Penn State's AccessAbility.
+
+Color contrast
+Currently, some of the default color combinations available in Bootstrap (such as the various styled button classes, some of the code highlighting colors used for basic code blocks, the .bg-primary contextual background helper class, and the default link color when used on a white background) have a low contrast ratio (below the recommended ratio of 4.5:1). This can cause problems to users with low vision or who are color blind. These default colors may need to be modified to increase their contrast and legibility.
+
+Additional resources
+"HTML Codesniffer" bookmarklet for identifying accessibility issues
+Chrome's Accessibility Developer Tools extension
+Colour Contrast Analyser
+The A11Y Project
+MDN accessibility documentation
+License FAQs
+
+Bootstrap is released under the MIT license and is copyright 2016 Twitter. Boiled down to smaller chunks, it can be described with the following conditions.
+
+It requires you to:
+Keep the license and copyright notice included in Bootstrap's CSS and JavaScript files when you use them in your works
+It permits you to:
+Freely download and use Bootstrap, in whole or in part, for personal, private, company internal, or commercial purposes
+Use Bootstrap in packages or distributions that you create
+Modify the source code
+Grant a sublicense to modify and distribute Bootstrap to third parties not included in the license
+It forbids you to:
+Hold the authors and license owners liable for damages as Bootstrap is provided without warranty
+Hold the creators or copyright holders of Bootstrap liable
+Redistribute any piece of Bootstrap without proper attribution
+Use any marks owned by Twitter in any way that might state or imply that Twitter endorses your distribution
+Use any marks owned by Twitter in any way that might state or imply that you created the Twitter software in question
+It does not require you to:
+Include the source of Bootstrap itself, or of any modifications you may have made to it, in any redistribution you may assemble that includes it
+Submit changes that you make to Bootstrap back to the Bootstrap project (though such feedback is encouraged)
+The full Bootstrap license is located in the project repository for more information.
+
+Translations
+
+Community members have translated Bootstrap's documentation into various languages. None are officially supported and they may not always be up to date.
+
+Bootstrap 中文文档 (Chinese)
+Bootstrap 3 中文手冊 (Chinese (Traditional))
+Bootstrap på Dansk (Danish)
+Bootstrap en Français (French)
+Bootstrap auf Deutsch (German)
+Bootstrap in Italiano (Italian)
+Bootstrap 한국어 (Korean)
+Bootstrap em Português do Brasil (Brazilian Portuguese)
+Bootstrap по-русски (Russian)
+Bootstrap en Español (Spanish)
+Türkçe Bootstrap (Turkish)
+Bootstrap українською (Ukrainian)
+Bootstrap bằng tiếng Việt (Vietnamese)
+We don't help organize or host translations, we just link to them.
+
+Finished a new or better translation? Open a pull request to add it to our list.
